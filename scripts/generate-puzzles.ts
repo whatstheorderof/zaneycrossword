@@ -9,14 +9,14 @@ import {
   buildEntriesFromAssignment,
   getTemplate,
   parseTemplate,
-} from "../src/lib/clues.ts";
-import type { CrosswordPuzzle, PuzzleIndexEntry, PuzzleSize } from "../src/lib/types.ts";
+} from "../src/lib/clues";
+import type { CrosswordPuzzle, PuzzleIndexEntry, PuzzleSize } from "../src/lib/types";
 import {
   assignClueNumbers,
   puzzleToGridFromEntries,
   validatePuzzle,
-} from "../src/lib/validator.ts";
-import { getWordsByLength } from "../src/lib/words.ts";
+} from "../src/lib/validator";
+import { getWordsByLength } from "../src/lib/words";
 
 type Slot = { direction: "across" | "down"; cells: [number, number][] };
 
